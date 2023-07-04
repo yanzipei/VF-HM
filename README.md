@@ -27,7 +27,9 @@ data.csv contains the diagnosis information for each eye, including the fundus f
 
 
 the fundus dir contains fundus images in tif format with RGB colorful mode. An example of fundus (Left eye) is shown as follows (From [Wikipedia](https://en.wikipedia.org/wiki/Fundus_photography)):
-![fundus](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Fundus_photograph_of_normal_left_eye.jpg/500px-Fundus_photograph_of_normal_left_eye.jpg)
+
+<!-- ![fundus](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Fundus_photograph_of_normal_left_eye.jpg/500px-Fundus_photograph_of_normal_left_eye.jpg) -->
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Fundus_photograph_of_normal_left_eye.jpg/500px-Fundus_photograph_of_normal_left_eye.jpg" width="200">
 
 
 the vf dir contains the vf map in JSON format with 52 effective points. An example of VF (Left eye) is shown as follows:
