@@ -31,7 +31,6 @@ the fundus dir contains fundus images in tif format with RGB colorful mode. An e
 <!-- ![fundus](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Fundus_photograph_of_normal_left_eye.jpg/500px-Fundus_photograph_of_normal_left_eye.jpg) -->
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Fundus_photograph_of_normal_left_eye.jpg/500px-Fundus_photograph_of_normal_left_eye.jpg" width="200">
 
-
 the vf dir contains the vf map in JSON format with 52 effective points. An example of VF (Left eye) is shown as follows:
 ```
 [[nan nan nan nan nan nan nan nan nan nan]
@@ -44,9 +43,7 @@ the vf dir contains the vf map in JSON format with 52 effective points. An examp
  [nan nan 27. 29. 29. 29. 28. 29. nan nan]
  [nan nan nan 31. 26. 27. 27. nan nan nan]
  [nan nan nan nan nan nan nan nan nan nan]]
-
 ```
-
 
 run baseline regression:
 ```bash
@@ -65,8 +62,8 @@ If you use this method or this code in your research, then please kindly cite it
 ```
 @inproceedings{yan2023vfhm,
 title={VF-HM: Vision Loss Estimation using Fundus Photograph for High Myopia},
-author={Zipei Yan, Dong Liang, Linchuan Xu, Jiahang Li, Zhengji Liu, Shuai Wang, Jiannong Cao, Chea-su KEE},
-booktitle = {MICCAI},
+author={Zipei Yan, Dong Liang, Linchuan Xu, Jiahang Li, Zhengji Liu, Shuai Wang, Jiannong Cao, Chea-su Kee},
+booktitle={MICCAI},
 year={2023},
 }
 ```
