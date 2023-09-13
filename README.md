@@ -1,10 +1,10 @@
 # VF-HM
-The offical code of "VF-HM: Vision Loss Estimation using Fundus Photograph for High Myopia" in MICCAI, 2023.
+The offical PyTorch implementation of "VF-HM: Vision Loss Estimation using Fundus Photograph for High Myopia" in MICCAI, 2023.
 
-Note: we are preparing for the camera-ready submission, the code will be released ASAP.
+<!-- Note: we are preparing for the camera-ready submission, the code will be released ASAP. -->
 
 ## Experiments
-
+### Setup
 First, prepare your dataset as:
 ```
 .
@@ -17,7 +17,7 @@ First, prepare your dataset as:
         └── bbb.json # vf file
 ```
 
-data.csv contains the diagnosis information for each eye, including the fundus file name and corresponding vf file name, eye_type: Left (L) or Right(R); in addition, there is one MM category (C0/C1/C2/C3/C4) for training data only.
+`data.csv` contains the diagnosis information for each eye, including the fundus file name and corresponding vf file name, eye_type: Left (L) or Right(R); in addition, there is one MM category (C0/C1/C2/C3/C4) for training data only.
 
 | fundus_id | vf_id    | mm | eye_type |
 |-----------|----------|----|----------|
@@ -26,12 +26,12 @@ data.csv contains the diagnosis information for each eye, including the fundus f
 | ...       | ...      | .  | .        |
 
 
-the fundus dir contains fundus images in tif format with RGB colorful mode. An example of fundus (Left eye) is shown as follows (From [Wikipedia](https://en.wikipedia.org/wiki/Fundus_photography)):
+`fundus` dir contains fundus images in tif format with RGB colorful mode. An example of fundus (Left eye) is shown as follows (From [Wikipedia](https://en.wikipedia.org/wiki/Fundus_photography)):
 
 <!-- ![fundus](https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Fundus_photograph_of_normal_left_eye.jpg/500px-Fundus_photograph_of_normal_left_eye.jpg) -->
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Fundus_photograph_of_normal_left_eye.jpg/500px-Fundus_photograph_of_normal_left_eye.jpg" width="200">
 
-the vf dir contains the vf map in JSON format with 52 effective points. An example of VF (Left eye) is shown as follows:
+`vf` dir contains the vf map in JSON format with 52 effective points. An example of VF (Left eye) is shown as follows:
 ```
 [[nan nan nan nan nan nan nan nan nan nan]
  [nan nan nan 24. 26. 24. 21. nan nan nan]
@@ -45,7 +45,8 @@ the vf dir contains the vf map in JSON format with 52 effective points. An examp
  [nan nan nan nan nan nan nan nan nan nan]]
 ```
 
-run baseline regression:
+### Run
+run regression baseline:
 ```bash
 python train_reg.py
 ```
@@ -58,10 +59,10 @@ python train_vfhm.py
 
 
 ## Citation
-If you use this method or this code in your research, then please kindly cite it:
+If you use our method or our code in your research, please kindly cite it:
 ```
 @inproceedings{yan2023vfhm,
-title={VF-HM: Vision Loss Estimation using Fundus Photograph for High Myopia},
+title={{VF-HM}: Vision loss estimation using fundus photograph for high myopia},
 author={Zipei Yan, Dong Liang, Linchuan Xu, Jiahang Li, Zhengji Liu, Shuai Wang, Jiannong Cao, Chea-su Kee},
 booktitle={MICCAI},
 year={2023},
