@@ -48,12 +48,12 @@ First, prepare your dataset as:
 ### Run
 run regression baseline:
 ```bash
-python train_reg.py
+bash train_reg.sh > train_reg.out &
 ```
 
 run VF-HM:
 ```bash
-python train_vfhm.py
+bash train_vfhm.sh > train_vfhm.out &
 ```
 
 
